@@ -62,7 +62,7 @@ only if best and within budget, cost sensitive selection
         ll rem_budget = budget;
         std::unordered_set<ll> remainingSet = f_obj.getEffectiveGroundSet();
         ll n = remainingSet.size();
-        ll randomSetSize = ((float)n/budget)* log(1/epsilon);
+        ll randomSetSize = ((float)n/budget)* log10(1/epsilon);
 
         if (verbose) {
                 std::cout << "Epsilon = " << epsilon << "\n";
